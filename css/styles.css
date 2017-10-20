@@ -52,19 +52,27 @@ html,body{
 .connect_container{
 	position: relative;
 	display: block;
-	width: 25%;
+	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15%;
-	background-color: #15A8A5;
+	margin-top: 7%;
+	font-family: "Roboto";
+	border: 3px solid #15A8A5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .connect_titre{
-	font-size: 150%;
+	position: relative;
+	font-size: 170%;
 	text-align: center;
 	display: block;
 	padding-top: 2%;
 	padding-bottom: 2%;
+	color: white;
+	font-weight: 700;
+	background-color: #15A8A5;
+	margin-bottom: 7%;
 }
 
 .connect_titre > *{
@@ -83,23 +91,70 @@ html,body{
 }
 
 .connect_input{
-	
+	position: relative;
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.connect_img_container{
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	border-left: 2px solid #F28E2B;
+	border-top: 2px solid #F28E2B;
+	border-bottom: 2px solid #F28E2B;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.connect_input_img{
+	position: relative;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2px;
+	height: 25px;
+	width: 25px;
+}
+
+.connect_input > input{
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	height: 28px;
+	margin-bottom: 10px;
+	border: 2px solid #F28E2B;
+	padding-left: 5px;
 }
 
 .connect_button{
+	display: block;
+	position: relative;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .connect_inner_button{
+	display: block;
+	position: relative;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	padding-left: 4%;
 	padding-right: 4%;
-	margin-top: 5%;
-	margin-bottom: 5%;
 	cursor: pointer;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	border: solid 1px;
+	border: solid 2px #F28E2B;
+	border-radius: 15px;
+	color: #F28E2B;
+	font-size: 130%;
+	font-weight: 900;
 }
