@@ -1,0 +1,78 @@
+/* définition de polices */
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../assets/police/Roboto-Thin.ttf');
+}
+
+/* Propriétés CSS de la page INDEX */
+
+
+html,body{
+	margin : 0;
+}
+
+.banderolle{
+	height: 15px;
+	display: block;
+}
+
+.couleur{
+	width: 25%;
+	height: inherit;
+	margin: 0;
+	display: inline-block;
+	white-space: initial;
+	float: left;
+}
+
+.couleur1{
+	background-color: #FDC31A;
+}
+
+.couleur2{
+	background-color: #F28E2B;
+}
+
+.couleur3{
+	background-color: #15A8A5;
+}
+
+.couleur4{
+	background-color: #C0D23F;
+}
+
+.titre{
+ 	font-size: 230%;
+ 	margin-top: 5%;
+ 	text-align: center;
+ 	font-family: "Roboto";
+}
+
+.connect_container{
+	position: relative;
+	display: block;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	background-color: #15A8A5;
+}
+
+.connect_titre{
+	font-size: 150%;
+	text-align: center;
+}
+
+.connect_titre > img{
+	width: 25px;
+	height: 25px;
+}
+
+.connect_input{
+
+}
+
+.connect_button{
+
+}
