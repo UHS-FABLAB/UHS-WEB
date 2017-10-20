@@ -62,11 +62,24 @@ html,body{
 .connect_titre{
 	font-size: 150%;
 	text-align: center;
+	display: block;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
-.connect_titre > img{
-	width: 25px;
-	height: 25px;
+.connect_titre > *{
+	display: inline-block;
+}
+
+.connect_img{
+	width: 40px;
+	height: 40px;
+	padding-right: 5%;
+	vertical-align: middle;
+}
+
+.connect_titre_text{
+	vertical-align: middle;
 }
 
 .connect_input{
@@ -74,5 +87,19 @@ html,body{
 }
 
 .connect_button{
+}
 
+.connect_inner_button{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	cursor: pointer;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: solid 1px;
 }

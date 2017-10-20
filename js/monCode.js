@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
     $(".connect_input").click(function () {
-        if ($(this).prev('input').attr('type') == 'password')
+        if ($(this).prev('input').attr('type') == 'password');
             changeType($(this).prev('input'), 'text');
         else
             changeType($(this).prev('input'), 'password');
