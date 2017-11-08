@@ -304,10 +304,58 @@ html,body{
 	width: 100%;
 	height: 90%;
 	background-color: #efefef;
-	padding: 0;
-	margin: 0;
+	margin-top: -4px;/*permet de coller le conteneur aux onglets de films*/
+}
+
+.titre_film{
+	position: relative;
+	display: block;
+	font-family: 'Roboto';
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2%;
 }
 
 .film_details{
+	display: block;
+	position: relative;
+	background-color: black;
+	height: 90%;
+	width: 100%;
+}
 
+.film_modif_container{
+	position: relative;
+	display: block;
+	height: 65%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: brown;
+}
+
+.film_list_added_elements{
+	display: block;
+	position: relative;
+	height: 35%;
+	width: 100%;
+	background-color: blue;
+}
+
+.film_details_container_left{
+	position: relative;
+	display: block;
+	height: 80%;
+	width: 50%;
+	background-color: red;
+}
+
+.film_video{
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 20%;
+	float: left;
+	background-color: yellow;
 }
