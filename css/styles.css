@@ -9,7 +9,8 @@
 
 
 html,body{
-	margin : 0;
+	margin : 0!important;
+	height: 100%;
 }
 
 .banderolle{
@@ -182,7 +183,10 @@ html,body{
 
 
 .sous-titre {
+	position: relative;
+	display: block;
     font-size: 35%;
+    font-weight: 600;
 }
 
 
@@ -208,4 +212,86 @@ html,body{
 
 .st_5{
     color: #f2a162;
+}
+
+/* PRORIETES CSS PAGE HOME */
+
+.titre_container{
+	position: relative;
+	display: block;
+	height: 70px;
+}
+
+.titre_home{
+	margin-top: 0px!important;
+}
+
+.application{
+	display: block;
+	position: relative;
+	height: calc( 100% - 70px);
+}
+
+.liste_films{
+	position: relative;
+	display: inline-block;
+	height: 10%;
+	width: 100%;
+}
+
+.film{
+	position: relative;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	width: auto;
+	min-width: 5%;
+	max-width: 10%;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 100%;
+	background-color: #efefef;
+	text-overflow: ellipsis;
+	overflow-y: hidden;
+	vertical-align: top;
+	border-left: solid 1px darkgrey;
+}
+
+.film_active{
+	background-color: #cecece;
+}
+
+.add_film{
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	cursor: pointer;
+	width: 60px;
+	height: 100%;
+	background-color: #efefef;
+	border-top-right-radius: 15px;
+	border-left: solid 1px darkgrey;
+}
+
+.add_film > img{
+	display: block;
+	position: relative;
+	height: 60px;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.film_details_container{
+	width: 100%;
+	height: 90%;
+	background-color: #efefef;
+	padding: 0;
+	margin: 0;
+}
+
+.film_details{
+
 }

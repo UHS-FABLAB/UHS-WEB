@@ -33,5 +33,3 @@ function connectToUHS(){
 function removeErrorMessage(){
     $('.connect_error').removeClass('connect_error_active');
 }
-
-//faire une fonction qui déclenche le bouton quand on clique sur entrée
