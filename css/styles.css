@@ -133,6 +133,27 @@ html,body{
 	padding-left: 5px;
 }
 
+.connect_error{
+	display: block;
+	position: relative;
+	opacity: 0;
+	text-align: center;
+	font-size: 90%;
+	color: #f45942;
+	max-height: 0;
+	height: auto;
+	font-weight: 900;
+	-webkit-transition: all 1.2s ease-out;
+  	-moz-transition: all 1.2s ease-out;
+  	-o-transition: all 1.2s ease-out;
+  	transition: all 1.2s ease-out;
+}
+
+.connect_error_active{
+	opacity: 1;
+	max-height: 200px;
+}
+
 .connect_button{
 	display: block;
 	position: relative;
