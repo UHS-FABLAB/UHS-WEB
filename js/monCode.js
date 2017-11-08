@@ -20,7 +20,6 @@ function verifyInputs(){
     console.log('verify');
     if(username == $('#username').val() && password == $('#password').val()){
         desappear();
-        connectToUHS();
     }else{
         $('.connect_error').addClass('connect_error_active');
     }
@@ -42,6 +41,15 @@ function desappear() {
 }
 
 function affiche_gif(){
+    //permet de détruire le bloc d'authentification
+    $('.connect_container').hide();
+    $('.loading_gif').css({
+        display: 'block'
+    });
     //function affichant le GIF après avoir cliqué sur connexion
-  document.getElementById('hide').innerHTML = '<img src="https://media.giphy.com/media/p3V5TYYVGSCvm/giphy.gif">';
+    $('.loading_gif').animate({
+        opacity: 1
+    },300,function(){
+        setTimeout(connectToUHS,700);
+    });
 }

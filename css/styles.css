@@ -63,6 +63,22 @@ html,body{
 	border-bottom-right-radius: 10px;
 }
 
+.loading_gif{
+	margin-top: 2%;	
+	position: absolute;
+	top: 20%;
+	width: 50%;
+	left: 25%;
+	display: none;
+}
+
+.loading_gif > img{
+	position: relative;
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
 .connect_titre{
 	position: relative;
 	font-size: 170%;
