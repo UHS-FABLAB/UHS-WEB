@@ -179,3 +179,33 @@ html,body{
 	font-size: 130%;
 	font-weight: 900;
 }
+
+
+.sous-titre {
+    font-size: 35%;
+}
+
+
+.st_1{
+    color: #f59c68;
+    margin-right: 1.5%;
+}
+
+.st_2{
+    color: #55cadf;
+    margin-right: 1.5%;
+}
+
+.st_3{
+    color: #cfd759;
+    margin-right: 1.5%;
+}
+
+.st_4{
+    color: #fed46c;
+    margin-right: 1.5%;
+}
+
+.st_5{
+    color: #f2a162;
+}
