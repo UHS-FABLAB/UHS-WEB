@@ -49,3 +49,5 @@ function affiche_gif()
   {
   document.getElementById('hide').innerHTML = '<img src="https://media.giphy.com/media/p3V5TYYVGSCvm/giphy.gif">';
   }
+=======
+}
