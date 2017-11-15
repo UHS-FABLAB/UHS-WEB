@@ -404,9 +404,7 @@ html,body{
 .film_connexion_structure{
 	position: relative;
 	display: flex;
-	height: 50%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	height: 70%;
 	width: 100%;
 	background-color: #cecece;
 }
@@ -416,7 +414,6 @@ html,body{
 	display: flex;
 	height: 20%;
 	margin-top: 5%;
-	margin-bottom: 5%;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
