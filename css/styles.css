@@ -320,42 +320,105 @@ html,body{
 .film_details{
 	display: block;
 	position: relative;
-	background-color: black;
 	height: 90%;
 	width: 100%;
 }
 
 .film_modif_container{
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	height: 65%;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: brown;
 }
 
 .film_list_added_elements{
 	display: block;
 	position: relative;
 	height: 35%;
-	width: 100%;
-	background-color: blue;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cecece;
 }
 
 .film_details_container_left{
-	position: relative;
-	display: block;
+	display: flex;
+	flex: 1;
 	height: 80%;
-	width: 50%;
-	background-color: red;
+	margin-right: 2%;
+	margin-top: 3%;
 }
 
 .film_video{
 	position: relative;
-	display: block;
+	display: flex;
+	flex: 1;
 	height: 100%;
-	width: 20%;
-	float: left;
-	background-color: yellow;
+	background-color: #cecece;
+	margin-right: 2%;
+}
+
+.film_video > video {
+	width: 100%;
+}
+
+.film_add_elements_onglets{
+	display: flex;
+	text-align: center;
+	height: 20%;
+	width: 100%;
+}
+
+.film_add_elements{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 2%;
+	background-color: #cecece;
+}
+
+.film_add_element_onglet{
+	display: flex;
+	width: 50%;
+}
+
+.film_add_video, .film_add_jeuvideo{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 80%;
+}
+
+.film_details_container_right{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 80%;
+	margin-left: 2%;
+	margin-top: 3%;
+}
+
+.film_connexion_structure{
+	position: relative;
+	display: flex;
+	height: 50%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	background-color: #cecece;
+}
+
+.film_connexion_structure_button{
+	position: relative;
+	display: flex;
+	height: 20%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: #cecece;
 }
