@@ -327,17 +327,17 @@ html,body{
 .film_modif_container{
 	position: relative;
 	display: flex;
-	justify-content: space-between;
-	height: 65%;
+	height: 75%;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 .film_list_added_elements{
 	display: block;
 	position: relative;
-	height: 35%;
+	height: 30%;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -376,7 +376,6 @@ html,body{
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	margin-left: 2%;
 	background-color: #cecece;
 }
 
@@ -394,8 +393,7 @@ html,body{
 
 .film_details_container_right{
 	display: flex;
-	flex-direction: column;
-	flex: 1;
+	flex: 3;
 	height: 80%;
 	margin-left: 2%;
 	margin-top: 3%;
@@ -404,9 +402,17 @@ html,body{
 .film_connexion_structure{
 	position: relative;
 	display: flex;
-	height: 70%;
-	width: 100%;
+	flex: 3;
 	background-color: #cecece;
+	margin-right: 3%;
+}
+
+.film_launch{
+	position: relative;
+	display: flex;
+	flex: 1;
+	background-color: #cecece;
+	margin-left: 3%;
 }
 
 .film_connexion_structure_button{
