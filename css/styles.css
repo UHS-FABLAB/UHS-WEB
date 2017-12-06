@@ -251,7 +251,7 @@ html,body{
 .liste_films{
 	position: relative;
 	display: inline-block;
-	height: 50px;
+	height: 10%;
 	width: 100%;
 }
 
@@ -327,12 +327,22 @@ html,body{
 .film_modif_container{
 	position: relative;
 	display: flex;
-	height: 75%;
 	height: 550px;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 
+}
+
+.film_list_added_elements{
+	display: flex;
+	position: relative;
+	height: 30%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cecece;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .film_details_container_left{
@@ -383,6 +393,7 @@ html,body{
 	position: relative;
 	display: flex;
 	flex: 1;
+	background-color: #cecece;
 	margin-left: 3%;
 }
 
@@ -397,7 +408,6 @@ html,body{
 	background-color: #cecece;
 }
 
-<<<<<<< HEAD
 .film_list_added_elements i {
     font-size: 10em;
     margin-top: 30px;
@@ -413,9 +423,3 @@ html,body{
     
 }
 
-=======
-.fa-plus {
-    text-transform: uppercase;
-    text-align: center;
-}
->>>>>>> 413e383fc5469e8dda298c2d459e0531c6065a8f
