@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<<<<<<< HEAD
-    <title>Gestion - Une Histoire Simple</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles_media.css">
-</head>
-=======
         <title>Gestion - Une Histoire Simple</title>
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/liste_films.css" />
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     </head>
->>>>>>> 413e383fc5469e8dda298c2d459e0531c6065a8f
 
-<body>
-    <div class='titre_container'>
-        <div class='titre titre_home'>UNE HISTOIRE SIMPLE
-            <div class="sous-titre">
-                <span class='st_1'>Un film</span><span class='st_2'>Transmedia</span><span class='st_3'>Interactif</span><span class='st_4'>Collectif</span><span class='st_5'>Territorial</span>
-            </div>
-        </div>
-    </div>
-    <div class='application'>
-        <div class='liste_films'>
-            <div class='film'>Le destin de Marc</div>
-            <div class='film'>Le destin de Julie</div>
-            <div class="add_film"><img src='./assets/img/add_icon.png'></div>
-        </div>
-        <div class='film_details_container'>
-            <div class='film_details'>
-                <div class='film_modif_container'>
-                    <div class='film_details_container_left'>
-                        <div class='film_add_elements'>
-                            <div id="onglet_0">
-                                <span class="onglet_0 onglet" id="onglet_ajout" onclick="javascript:change_onglet('ajout');"><i class="fa fa-television" aria-hidden="true"></i> <p>Ajout de média</p></span>
-                            </div>
-                            <div id="onglet_1">
-                                <span class="onglet_1 onglet" id="onglet_modif" onclick="javascript:change_onglet('modif');"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <p>Modifier</p></span>
-                            </div>
-                            <div class="contenu_onglet">
-                                <div class="contenu_onglet" id="contenu_onglet_ajout">
-                                    <div class='film_add_elements_onglet_ajout'>
-                                        <span class="onglets_0 onglet" id="onglets_video" onclick="javascript:change_onglets('video');"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="ajout_video"> Vidéo</span>
-                                        <span class="onglets_1 onglet" id="onglets_jeu" onclick="javascript:change_onglets('jeu');"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="ajout_jeu"> Jeu vidéo</span>
-                                        <div class="contenu_onglets" id="contenu_onglets_video">
-                                            <div class="film_add_elements_ajout">
-                                                <div class="film_add_elements_ajout_title">
-                                                    <i class="fa fa-tags" aria-hidden="true"></i> <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
-                                                </div>
-
-                                                <div class="film_add_elements_ajout_folder">
-                                                    <i class="fa fa-folder-open" aria-hidden="true"></i><button type="submit" class="ajout_parcourir">Parcourir...</button>
-                                                </div>
-
-                                                <div class="film_add_elements_ajout_describe">
-                                                    <i class="fa fa-info-circle" aria-hidden="true"></i> <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
-                                                </div>
-
-                                                <div class="element_validate"><i class="fa fa-plus" aria-hidden="true"> <span class="ajouter_text"> Ajouter</span></i></div>
+	<body>
+		<div class='titre_container'>
+			<div class='titre titre_home'>UNE HISTOIRE SIMPLE
+	        			<div class="sous-titre">
+				<span class='st_1'>Un film</span><span class='st_2'>Transmedia</span><span class='st_3'>Interactif</span><span class='st_4'>Collectif</span><span class='st_5'>Territorial</span>
+				</div>
+	        </div>
+	    </div>
+        <div class='application'>
+        	<div class='liste_films'>
+        		<div class='film'>Le destin de Marc</div>
+        		<div class='film'>Le destin de Julie</div>
+        		<div class="add_film"><img src='./assets/img/add_icon.png'></div>
+        	</div>
+        	<div class='film_details_container'>
+        		<div class='film_details'>
+        			<div class='film_modif_container'>
+	        			<div class='film_details_container_left'>
+	        				<div class='film_add_elements'>
+                                <i class="fa fa-television" aria-hidden="true"></i> Ajout de média
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier
+	        					<div class='film_add_elements_onglet_ajout'>
+                                    <i class="fa fa-circle-o" aria-hidden="true"></i> Vidéo 
+                                    <i class="fa fa-circle" aria-hidden="true"></i> Jeu vidéo 
+                                        <div class="film_add_elements_ajout">
+                                            <div class="film_add_elements_ajout_title">
+                                            <i class="fa fa-tags" aria-hidden="true"></i> Titre
                                             </div>
+                                            
+                                            <div class="film_add_elements_ajout_folder">
+                                            <i class="fa fa-folder-open" aria-hidden="true"></i> Parcourir
+                                            </div>
+                                            
+                                            <div class="film_add_elements_ajout_describe">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i> Description
+                                            </div>
+                                            
+                                            <i class="fa fa-plus" aria-hidden="true"> Ajouter</i>
                                         </div>
-                                        <div class="contenu_onglets" id="contenu_onglets_jeu">
-
-                                        </div>
-                                    </div>
+	        					</div>
+                                
+                                <div class="film_add_elements_onglet_modify">
+                                
                                 </div>
-<<<<<<< HEAD
-=======
 	        				</div>
 	        			</div>
 	        			<div class='film_details_container_right'>
@@ -83,7 +65,7 @@
 	        			<div class='film_list_container'>
 	        				<div class='film_added_element'>
 	        					<div class='film_added_element_preview'></div>
-	        					<div class='film_added_element_titre'></div>
+	        					<div class='film_added_element_'></div>
 	        				</div>
 	        				<div class='film_added_element'></div>
 	        				<div class='film_added_element'></div>
@@ -103,48 +85,9 @@
 	        		</div>
         		</div>
         	</div>
->>>>>>> 413e383fc5469e8dda298c2d459e0531c6065a8f
 
-
-                                <div class="contenu_onglet" id="contenu_onglet_modif">
-                                    <div class="film_add_elements_ajout">
-                                        <div class="film_add_elements_ajout_title">
-                                            <i class="fa fa-tags" aria-hidden="true"></i> <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
-                                        </div>
-
-                                        <div class="film_add_elements_ajout_folder">
-                                            <i class="fa fa-folder-open" aria-hidden="true"></i><button type="submit" class="ajout_parcourir">Parcourir...</button>
-                                        </div>
-
-                                        <div class="film_add_elements_ajout_describe">
-                                            <i class="fa fa-info-circle" aria-hidden="true"></i> <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
-                                        </div>
-
-                                        <div class="element_validate"><i class="fa fa-check" aria-hidden="true"> <span class="valider_text"> Valider</span></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='film_details_container_right'>
-                        <div class='film_connexion_structure'></div>
-                        <div class='film_launch'></div>
-                    </div>
-                </div>
-                <div class='film_list_added_elements'>
-                    <div class='arrow_button_list_added arrow_button_left'><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>
-                    <div class='film_list_container'>
-                        <div class='film_added_element'></div>
-                        <div class='film_added_element'></div>
-                    </div>
-                    <div class='arrow_button_list_added arrow_button_right'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
-                </div>
-            </div>
         </div>
-
-    </div>
-    <script src="js/jquery-min.js"></script>
-    <script src="js/monCode.js"></script>
-    <script src="js/js_media.js"></script>
-</body>
+		<script src="js/jquery-min.js"></script>
+		<script src="js/monCode.js"></script>
+	</body>
 </html>
