@@ -391,10 +391,15 @@ html,body{
 .film_launch{
 	position: relative;
 	display: flex;
-	flex: 1;
-	background-color: #cecece;
 	margin-left: 3%;
 }
+.film_launch img{
+	position: relative;
+	width: auto;
+	height: 40%;
+	margin-top: auto;
+    margin-bottom: auto;
+	}
 
 .film_connexion_structure_button{
 	position: relative;
