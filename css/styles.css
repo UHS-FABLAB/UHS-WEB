@@ -251,7 +251,7 @@ html,body{
 .liste_films{
 	position: relative;
 	display: inline-block;
-	height: 10%;
+	height: 50px;
 	width: 100%;
 }
 
@@ -411,7 +411,6 @@ html,body{
 	position: relative;
 	display: flex;
 	flex: 1;
-	background-color: #cecece;
 	margin-left: 3%;
 }
 
