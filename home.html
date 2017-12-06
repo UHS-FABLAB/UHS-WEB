@@ -3,6 +3,7 @@
 	<head>
         <title>Gestion - Une Histoire Simple</title>
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     </head>
 
 	<body>
@@ -24,8 +25,31 @@
         			<div class='film_modif_container'>
 	        			<div class='film_details_container_left'>
 	        				<div class='film_add_elements'>
-	        					<div class='film_add_elements_onglets'>
+                                <i class="fa fa-television" aria-hidden="true"></i> Ajout de média
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier
+	        					<div class='film_add_elements_onglet_ajout'>
+                                    <i class="fa fa-circle-o" aria-hidden="true"></i> Vidéo 
+                                    <i class="fa fa-circle" aria-hidden="true"></i> Jeu vidéo 
+                                        <div class="film_add_elements_ajout">
+                                            <div class="film_add_elements_ajout_title">
+                                            <i class="fa fa-tags" aria-hidden="true"></i> Titre
+                                            </div>
+                                            
+                                            <div class="film_add_elements_ajout_folder">
+                                            <i class="fa fa-folder-open" aria-hidden="true"></i> Parcourir
+                                            </div>
+                                            
+                                            <div class="film_add_elements_ajout_describe">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i> Description
+                                            </div>
+                                            
+                                            <i class="fa fa-plus" aria-hidden="true"> Ajouter</i>
+                                        </div>
 	        					</div>
+                                
+                                <div class="film_add_elements_onglet_modify">
+                                
+                                </div>
 	        				</div>
 	        			</div>
 	        			<div class='film_details_container_right'>
@@ -34,12 +58,12 @@
 	        			</div>
 	        		</div>
 	        		<div class='film_list_added_elements'>
-	        			<div class='arrow_button_list_added arrow_button_left'><img src=''></div>
+	        			<div class='arrow_button_list_added arrow_button_left'><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>
 	        			<div class='film_list_container'>
 	        				<div class='film_added_element'></div>
 	        				<div class='film_added_element'></div>
 	        			</div>
-	        			<div class='arrow_button_list_added arrow_button_right'><img src=''></div>
+	        			<div class='arrow_button_list_added arrow_button_right'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
 	        		</div>
         		</div>
         	</div>
