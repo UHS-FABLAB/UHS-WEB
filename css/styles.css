@@ -251,7 +251,7 @@ html,body{
 .liste_films{
 	position: relative;
 	display: inline-block;
-	height: 50px;
+	height: 10%;
 	width: 100%;
 }
 
@@ -327,7 +327,7 @@ html,body{
 .film_modif_container{
 	position: relative;
 	display: flex;
-	height: 75%;
+	height: 550px;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -422,3 +422,4 @@ html,body{
 .arrow_button_list_added arrow_button_right {
     
 }
+
