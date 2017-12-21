@@ -1,12 +1,11 @@
 .film_add_elements_onglets {
     display: flex;
-    text-align: center;
-    height: 20%;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .film_add_elements {
     flex: 1;
+    flex-direction: column;
 }
 
 .film_add_element_onglet {
@@ -89,34 +88,55 @@
     font-size: 1em;
 }
 
-.onglet_media {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-family: Roboto;
-    margin-right: 15px;
-}
-
-.onglet_modif {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-family: Roboto;
-}
-
-.onglet_list{
-    display: flex;
-}
-
 .onglet{
-    cursor: pointer;
+    display: flex;
+    width: 40%;
+    flex: 1;
 }
 
-.sous_onglet_list{
-    margin-top: 10px;
+.onglet > *{
+    display: inline-block;
+}
+
+.onglet_actif{
+    color: red;
+    flex: 2!important;
+}
+
+.contenu_onglet{
+    display: none;
+    flex-direction: column;
+}
+
+.film_modif_ajout_onglets{
+    position: relative;
     display: flex;
 }
 
-.sous_onglet{
-    margin-right: 15px;
-    margin-left: 22px;
-    cursor: pointer;
+.contenu_add_elem{
+    display: block;
+}
+
+.film_add_video,.film_add_jeuvideo{
+    display: flex;
+    flex-direction: column;
+}
+
+.film_add_video, .film_add_jeuvideo{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 80%;
+}
+
+.film_add_onglet_actif{
+    color: red;
+}
+
+.film_add_elem_active{
+    display: flex!important;
+}
+
+.contenu_onglet_actif{
+    display: flex!important;
 }

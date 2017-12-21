@@ -29,65 +29,27 @@
 
                     <div class='film_details_container_left'>
                         <div class='film_add_elements'>
-
-                            <div class='onglet_list'>
-                                <div class='onglet onglet_actif'>
-                                    <span class="onglet_media">
-                                    <i class="fa fa-television" aria-hidden="true"></i> média
-                                </span>
+                            <div class='film_modif_ajout_onglets'>
+                                <div id="onglet_0" class='onglet onglet_actif'>
+                                    <span class="onglet_0 onglet" id="onglet_ajout"><i class="fa fa-television" aria-hidden="true"></i> <p>Ajout de média</p></span>
                                 </div>
-                                <div class='onglet onglet_inactif'>
-                                    <span class="onglet_modif">
-                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier
-                                </span>
+                                <div id="onglet_1" class='onglet'>
+                                    <span class="onglet_1 onglet" id="onglet_modif"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <p>Modifier</p></span>
                                 </div>
                             </div>
-
-                            <div class="contenu_onglet">
-                                <div class="contenu_onglet_media">
-
-                                    <div class="sous_onglet_list">
-                                        <div class="sous_onglet onglet_actif">
-                                            <span class="sous_onglet_video"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="ajout_video"> Vidéo</span>
-                                        </div>
-                                        <div class="sous_onglet onglet_inactif">
-                                            <span class="sous_onglet_jeu"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="ajout_jeu"> Jeu vidéo</span>
-                                        </div>
+                            <div class="contenu_onglet contenu_onglet_add contenu_onglet_actif">
+                                <div class='film_add_elements_onglets'>
+                                    <div class='film_add_video_onglet film_add_onglet_actif'>
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        <span class="ajout_video">Vidéo</span>
                                     </div>
-
-                                    <div class="contenu_onglets_video">
-                                        <div class="film_add_elements_ajout">
-                                            <div class="film_add_elements_ajout_title">
-                                                <i class="fa fa-tags" aria-hidden="true"></i>
-                                                <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
-                                            </div>
-
-                                            <div class="film_add_elements_ajout_folder">
-                                                <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                <button type="submit" class="ajout_parcourir">Parcourir...</button>
-                                            </div>
-
-                                            <div class="film_add_elements_ajout_describe">
-                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
-                                            </div>
-
-                                            <div class="element_validate">
-                                                <i class="fa fa-plus" aria-hidden="true"> 
-                                                    <span class="ajouter_text"> Ajouter</span></i>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="contenu_onglets" id="contenu_onglets_jeu">
-
+                                    <div class='film_add_jeuvideo_onglet'>
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        <span class="ajout_video">Jeu Vidéo</span>
                                     </div>
                                 </div>
-
-
-                                <div class="contenu_onglet_modif">
-                                    <!--
-                                    <div class="film_add_elements_ajout">
+                                <div class="contenu_add_elem">
+                                    <div class="film_add_video film_add_elem_active">
                                         <div class="film_add_elements_ajout_title">
                                             <i class="fa fa-tags" aria-hidden="true"></i>
                                             <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
@@ -104,13 +66,40 @@
                                         </div>
 
                                         <div class="element_validate">
-                                            <i class="fa fa-check" aria-hidden="true"> 
-                                            <span class="valider_text"> Valider</span></i>
+                                            <i class="fa fa-plus" aria-hidden="true">
+                                                <span class="ajouter_text"> Ajouter</span>
+                                            </i>
                                         </div>
                                     </div>
-                                    -->
+
+                                    <div class="film_add_jeuvideo">
+                                        <div class="film_add_elements_ajout_title">
+                                            <i class="fa fa-tags" aria-hidden="true"></i>
+                                            <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
+                                        </div>
+
+                                        <div class="film_add_elements_ajout_folder">
+                                            <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                            <button type="submit" class="ajout_parcourir">Parcourir...</button>
+                                        </div>
+
+                                        <div class="film_add_elements_ajout_describe">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
+                                        </div>
+
+                                        <div class="element_validate">
+                                            <i class="fa fa-check" aria-hidden="true">
+                                                <span class="valider_text">Valider</span>
+                                            </i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="contenu_onglet contenu_onglet_modif">
+                                Ici c'est la modification
+                            </div>                                      
                         </div>
                     </div>
 

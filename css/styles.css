@@ -365,13 +365,6 @@ html,body{
 	width: 100%;
 }
 
-.film_add_video, .film_add_jeuvideo{
-	position: relative;
-	display: flex;
-	width: 100%;
-	height: 80%;
-}
-
 .film_details_container_right{
 	display: flex;
 	flex: 3;
@@ -419,26 +412,5 @@ html,body{
 
 .arrow_button_list_added {
     
-}
-
-#onglet_1{
- float: left;
-}
-
-#onglet_0{
- float: right
-}
-
-.onglet{
-	display: inline-block;
-}
-
-.onglet > *{
-	display: inline-block;
-}
-
-.onglet_actif{
-	display: block;
-	color: red;
 }
 
