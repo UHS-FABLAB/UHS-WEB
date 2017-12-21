@@ -21,12 +21,19 @@
 }
 
 .film_add_elements_ajout_title {
-    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: 1.5em;
+}
+
+.film_add_elements_ajout_folder{
+    margin-top: 15px;
+    font-size: 1.5em;
 }
 
 .film_add_elements_ajout_describe {
-    margin-top: 4px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 1.5em;
 }
 
 .fa-plus,
@@ -48,15 +55,17 @@
 
 .ajout_parcourir,
 .ajout_title {
-    position: absolute;
-    margin-top: 22px;
     margin-left: 15px;
 }
 
 .ajout_description {
-    position: absolute;
-    margin-top: 14px;
+    position: relative;
+    margin-top: 17px;
     margin-left: 20px;
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 165px;
+    max-width: 165px;
 }
 
 .ajout_jeu,
@@ -78,4 +87,36 @@
 
 .fa-circle{
     font-size: 1em;
+}
+
+.onglet_media {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: Roboto;
+    margin-right: 15px;
+}
+
+.onglet_modif {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: Roboto;
+}
+
+.onglet_list{
+    display: flex;
+}
+
+.onglet{
+    cursor: pointer;
+}
+
+.sous_onglet_list{
+    margin-top: 10px;
+    display: flex;
+}
+
+.sous_onglet{
+    margin-right: 15px;
+    margin-left: 22px;
+    cursor: pointer;
 }
