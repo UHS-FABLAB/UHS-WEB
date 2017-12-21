@@ -32,26 +32,6 @@
     height: auto;
 }
 
-.film_add_elements i {
-    font-size: 2.5em;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-.film_add_elements_ajout {
-    margin-top: 18px;
-    display: flex;
-    flex-direction: column;
-}
-
-.film_add_elements_ajout_title {
-    margin-bottom: 18px;
-}
-
-.film_add_elements_ajout_describe {
-    margin-top: 18px;
-}
-
 .film_list_container{
     position: relative;
     display: block;

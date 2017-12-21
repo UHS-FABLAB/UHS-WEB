@@ -15,7 +15,6 @@
 }
 
 .film_add_elements i {
-    font-size: 2.5em;
     margin-top: 20px;
     margin-left: 40px;
 }
@@ -113,4 +112,8 @@ ajout_jeu {
 
 .element_validate:hover {
     color: red;
+}
+
+.fa-circle{
+    font-size: 1em;
 }
