@@ -412,12 +412,6 @@ html,body{
 	background-color: #cecece;
 }
 
-.film_list_added_elements i {
-    font-size: 10em;
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
 .film_list_added_elements i:hover{
     opacity: 0.6;
     cursor: pointer;
@@ -425,6 +419,22 @@ html,body{
 
 .arrow_button_list_added {
     
+}
+
+#onglet_1{
+ float: left;
+}
+
+#onglet_0{
+ float: right
+}
+
+.onglet{
+	display: inline-block;
+}
+
+.onglet > *{
+	display: inline-block;
 }
 
 .onglet_actif{
@@ -435,3 +445,4 @@ html,body{
 .onglet_inactif{
 	display: block;
 }
+

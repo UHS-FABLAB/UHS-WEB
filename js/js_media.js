@@ -19,3 +19,10 @@
 
                 var anc_onglets = 'video';
                 change_onglets(anc_onglets);
+
+
+$(document).ready(function () {
+    $('.onglet').click(function(){
+        //
+    });
+}

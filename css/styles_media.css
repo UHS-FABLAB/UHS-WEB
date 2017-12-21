@@ -14,12 +14,6 @@
     width: 50%;
 }
 
-.film_add_elements i {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
 .film_add_elements_ajout {
     margin-top: 4px;
     display: flex;
