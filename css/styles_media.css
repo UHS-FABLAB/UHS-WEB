@@ -15,6 +15,7 @@
 }
 
 .film_add_elements i {
+    font-size: 1.5em;
     margin-top: 20px;
     margin-left: 40px;
 }
@@ -54,14 +55,14 @@
 .ajout_parcourir,
 .ajout_title {
     position: absolute;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-left: 15px;
 }
 
 .ajout_description {
     position: absolute;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 14px;
+    margin-left: 20px;
 }
 
 .onglet_0,
@@ -89,8 +90,8 @@
 .onglet_0 p,
 .onglet_1 p {
     position: absolute;
-    left: 95px;
-    margin-top: -30px;
+    left: 80px;
+    margin-top: -22px;
 }
 
 .ajout_jeu,
@@ -101,7 +102,7 @@
 }
 
 .ajout_video,
-ajout_jeu {
+.ajout_jeu {
     text-transform: uppercase;
     padding-left: 5px;
 }
