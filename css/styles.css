@@ -423,7 +423,15 @@ html,body{
     cursor: pointer;
 }
 
-.arrow_button_list_added arrow_button_right {
+.arrow_button_list_added {
     
 }
 
+.onglet_actif{
+	display: block;
+	color: red;
+}
+
+.onglet_inactif{
+	display: block;
+}
