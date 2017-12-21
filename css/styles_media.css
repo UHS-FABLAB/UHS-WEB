@@ -90,12 +90,20 @@
 
 .onglet{
     display: flex;
-    width: 40%;
+    align-items: center;
     flex: 1;
 }
 
-.onglet > *{
-    display: inline-block;
+.onglet > i, .onglet > p{
+    display: flex;
+}
+
+.onglet > i{
+    margin-right: 2%;
+}
+
+.onglet > p {
+    margin-left: 2%;
 }
 
 .onglet_actif{
@@ -111,6 +119,10 @@
 .film_modif_ajout_onglets{
     position: relative;
     display: flex;
+}
+
+.film_modif_ajout_onglets_alter{
+    flex-direction: row-reverse;
 }
 
 .contenu_add_elem{
