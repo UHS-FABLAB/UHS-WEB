@@ -65,35 +65,6 @@
     margin-left: 20px;
 }
 
-.onglet_0,
-.onglet_1 {
-    cursor: pointer;
-    font-family: "Roboto";
-    font-weight: 600;
-}
-
-.onglet_1 {
-    color: red;
-}
-
-#onglet_0 {
-    text-transform: uppercase;
-    width: auto;
-}
-
-#onglet_1 {
-    text-transform: uppercase;
-    border-top-width: 0px;
-    width: auto;
-}
-
-.onglet_0 p,
-.onglet_1 p {
-    position: absolute;
-    left: 80px;
-    margin-top: -22px;
-}
-
 .ajout_jeu,
 .ajout_video {
     font-family: Roboto;
@@ -105,10 +76,6 @@
 .ajout_jeu {
     text-transform: uppercase;
     padding-left: 5px;
-}
-
-.onglets_1 .fa{
-    color: red;
 }
 
 .element_validate:hover {
