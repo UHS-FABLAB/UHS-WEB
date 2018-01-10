@@ -152,3 +152,20 @@
 .contenu_onglet_actif{
     display: flex!important;
 }
+
+.ajout_video{
+    cursor:pointer;
+}
+
+.onglet{
+    text-transform: uppercase;
+    font-family: Calibri;
+}
+
+.onglet_add{
+    flex:2;
+}
+
+.onglet_modif{
+    flex:1;
+}
