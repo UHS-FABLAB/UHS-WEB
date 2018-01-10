@@ -10,7 +10,7 @@ $(document).ready(function () {
         }else{
             $('.film_modif_ajout_onglets').addClass('film_modif_ajout_onglets_alter');
             $('.contenu_onglet_modif').addClass('contenu_onglet_actif');
-            $('.contenu_onglet_add').removeClass('contenu_onglet_actif');   
+            $('.contenu_onglet_add').removeClass('contenu_onglet_actif');
         }
     });
     //gère les onglets video/jeuvideo
@@ -29,7 +29,6 @@ $(document).ready(function () {
             $('.film_add_jeuvideo').addClass('film_add_elem_active');
         }
     });
-
 });
 
 //spéacial branche dev
