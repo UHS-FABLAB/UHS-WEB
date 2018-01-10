@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a88183-ed88-40e3-a318-2651dd52023e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
       <change beforePath="$PROJECT_DIR$/js/js_media.js" afterPath="$PROJECT_DIR$/js/js_media.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="js_media.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js_media.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+            <state relative-caret-position="181">
+              <caret line="77" column="372" lean-forward="false" selection-start-line="77" selection-start-column="372" selection-end-line="77" selection-end-column="372" />
               <folding />
             </state>
           </provider>
@@ -197,7 +195,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14869000" />
+    <option name="totallyTimeSpent" value="14986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -743,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/js_media.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+        <state relative-caret-position="181">
+          <caret line="77" column="372" lean-forward="false" selection-start-line="77" selection-start-column="372" selection-end-line="77" selection-end-column="372" />
           <folding />
         </state>
       </provider>

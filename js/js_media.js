@@ -75,7 +75,7 @@ $(document).ready(function () {
         }
         else{
             $('.error_jeu').html("");
-            var newMedia = "<div id='element_" + count + "' class='film_added_element draggable elem" + count + "'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/manette.jpg'></div><div id='element_jeu_" + count + "' class='film_element_titre'>" + titre + "</div><div id='element_jeu_data_" + count + "' class='film_element_data elem'>30:15 - " + description + "</div></div>";
+            var newMedia = "<div id='element_" + count + "' class='film_added_element draggable elem" + count + "'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/manette.jpg'></div><div id='element_jeu_" + count + "' class='film_element_titre'>" + titre + "</div><div id='element_jeu_data_" + count + "' class='film_element_data elem'>" + description + "</div></div>";
             $(".film_list_container").append(newMedia);
 
             $("#element_" + count + "" ).click(function modifMedia(){
