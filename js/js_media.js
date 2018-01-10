@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    var count = 0;
+    var count2 = 0;
+    var id;
+    var idGame;
 
     //gère les onglets Ajout/modif
     $('.onglet').click(function(){
@@ -35,13 +39,31 @@ $(document).ready(function () {
     $("#testclick").click(function addMedia(){
         var titre = $("#titre_film").val();
         var description = $("#description_film").val();
+        var title;
+        var describ;
         if( titre === ""){
             $('.error_film').html("Erreur, vous devez entrer le nom du film !");
         }
         else{
             $('.error_film').html("");
-            var newMedia = "<div class='film_added_element draggable'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div><div class='film_element_titre'>" + titre + "</div><div class='film_element_data'>30:15 - " + description + "</div></div>";
+            var newMedia = "<div id='element_" + count + "' class='film_added_element draggable elem" + count + "'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div><div id='element_film_" + count + "' class='film_element_titre'>" + titre + "</div><div id='element_data_" + count + "' class='film_element_data elem'>" + description + "</div></div>";
             $(".film_list_container").append(newMedia);
+
+            $("#element_" + count + "" ).click(function modifMedia(){
+                id = $(this).attr('id').split("_")[1];
+                $('#media_modif_title').val($("#element_film_" + id + "").html());
+                $('#media_modif_describ').val($("#element_data_" + id + "").html());
+                console.log(id)
+            });
+            count++;
+
+            $(".valider_text").click(function modifMediaOk(){
+                var nul = "";
+                title = $("#media_modif_title").val();
+                describ = $("#media_modif_describ").val();
+                $("#element_film_" + id + "").html(title);
+                $("#element_data_" + id + "").html(describ);
+            });
         }
     });
 
@@ -53,8 +75,26 @@ $(document).ready(function () {
         }
         else{
             $('.error_jeu').html("");
-            var newMedia = "<div class='film_added_element draggable'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/manette.jpg'></div><div class='film_element_titre'>" + titre + "</div><div class='film_element_data'>" + description + "</div></div>";
+            var newMedia = "<div id='element_" + count + "' class='film_added_element draggable elem" + count + "'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/manette.jpg'></div><div id='element_jeu_" + count + "' class='film_element_titre'>" + titre + "</div><div id='element_jeu_data_" + count + "' class='film_element_data elem'>30:15 - " + description + "</div></div>";
             $(".film_list_container").append(newMedia);
+
+            $("#element_" + count + "" ).click(function modifMedia(){
+                idGame = $(this).attr('id').split("_")[1];
+                $('#media_modif_title').val(titre);
+                $('#media_modif_describ').val(description);
+                console.log(id)
+            });
+            count++;
+
+            $(".valider_text").click(function modifMediaOk(){
+                console.log(id);
+                titre = $("#media_modif_title").val();
+                description = $("#media_modif_describ").val();
+                $("#element_jeu_" + idGame + "").html(title);
+                $("#element_jeu_data_" + idGame + "").html(describ);
+                $("#media_modif_title").empty();
+                $("#media_modif_describ").empty();
+            });
         }
     });
 });

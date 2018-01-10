@@ -104,17 +104,17 @@
                                 <p style="font-family: Calibri;text-align: center;margin-top:0px;">Sélectionnez un média à modifier</p>
                                 <div class="film_add_elements_ajout_title">
                                     <i class="fa fa-tags" aria-hidden="true"></i>
-                                    <input type="text" id="nom" class="ajout_title" placeholder=" Titre" />
+                                    <input type="text" id="media_modif_title" value="" class="ajout_title" placeholder=" Titre" />
                                 </div>
 
                                 <div class="film_add_elements_ajout_folder">
-                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                    <input style="margin-left: 16px" id="fileupload" type="file" name="files[]" multiple="">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <button style="margin-left: 22px;" type="submit">Supprimer le média</button>
                                 </div>
 
                                 <div class="film_add_elements_ajout_describe">
                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                    <textarea class="ajout_description" placeholder="Description..."></textarea>
+                                    <textarea class="ajout_description" id="media_modif_describ" value="" placeholder="Description..."></textarea>
                                 </div>
 
                                 <div class="element_validate">
@@ -142,7 +142,7 @@
                         <div class='film_added_element draggable'>
                             <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
                             <div class='film_element_titre'>Titre du film</div>
-                            <div class='film_element_data'>30:15 - Description du film</div>
+                            <div class='film_element_data'>Description du film</div>
                         </div>
                         </template>
                     </div>
