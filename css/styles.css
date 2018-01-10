@@ -401,7 +401,13 @@ html,body{
 	position: relative;
 	display: flex;
 	margin-left: 3%;
+	cursor: pointer;
 }
+
+.film_launch:hover{
+	opacity: 0.8;
+}
+
 .film_launch img{
 	position: relative;
 	width: auto;
@@ -427,6 +433,9 @@ html,body{
 }
 
 .arrow_button_list_added {
-    
+    cursor:pointer;
 }
 
+.arrow_button_list_added:hover{
+	opacity: 0.8;
+}
