@@ -159,7 +159,9 @@
 
 .onglet{
     text-transform: uppercase;
-    font-family: Calibri;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .onglet_add{
