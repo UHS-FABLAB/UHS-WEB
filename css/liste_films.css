@@ -48,7 +48,6 @@
 .film_added_element{
     position: relative;
     display: inline-block;
-    background-color: black;
     height: 85%;
     margin-top: 1%;
     width: 15%;
@@ -62,6 +61,25 @@
     height: 75%;
 }
 
-.film_added_element_titre{
-    
+.film_element_img{
+    height: 65%;
+    text-align: center;
+}
+
+.film_element_img > *{
+    height: 100%;
+}
+
+.film_element_titre{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.film_element_data{
+    display: none;
 }
