@@ -265,8 +265,8 @@ html,body{
 	max-width: 10%;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 19px;
-	height: 50%;
+	padding-top: 21px;
+	height: 40px;
 	text-transform: uppercase;
 	font-family: Calibri;
 	background-color: #f28e2b;
@@ -292,10 +292,9 @@ html,body{
 	position: relative;
 	display: inline-block;
 	float: left;
-	height: 100%;
 	cursor: pointer;
 	width: 60px;
-	height: 72%;
+	height: 61px;
 	background-color: #f28e2b;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
