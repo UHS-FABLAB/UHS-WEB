@@ -54,7 +54,7 @@
                                     <div class="film_add_video film_add_elem_active">
                                         <div class="film_add_elements_ajout_title">
                                             <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
+                                            <input type="text" id="titre_film" value="" class="ajout_title" placeholder=" Titre du film"/><span class="error_film" style="color:red;font-family: Calibri;font-size:12px;margin-left:5px;"></span>
                                         </div>
 
                                         <div class="film_add_elements_ajout_folder">
@@ -64,12 +64,12 @@
 
                                         <div class="film_add_elements_ajout_describe">
                                             <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                            <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
+                                            <textarea class="ajout_description" id="description_film" placeholder="Description du film (facultatif)"></textarea>
                                         </div>
 
                                         <div class="element_validate">
                                             <i class="fa fa-plus" aria-hidden="true">
-                                                <span class="ajouter_text"> Ajouter</span>
+                                                <span class="ajouter_text" id="testclick"> Ajouter</span>
                                             </i>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                                     <div class="film_add_jeuvideo">
                                         <div class="film_add_elements_ajout_title">
                                             <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <input type="text" id="nom" class="ajout_title" placeholder=" Titre du film" />
+                                            <input type="text" id="titre_jeu" value="" class="ajout_title" placeholder=" Titre du film" /><span class="error_jeu" style="color:red;font-family: Calibri;font-size:12px;margin-left:5px;"></span>
                                         </div>
 
                                         <div class="film_add_elements_ajout_folder">
@@ -87,12 +87,12 @@
 
                                         <div class="film_add_elements_ajout_describe">
                                             <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                            <textarea class="ajout_description" placeholder="Description du film (facultatif)"></textarea>
+                                            <textarea class="ajout_description" id="description_jeu" value="" placeholder="Description du jeu (facultatif)"></textarea>
                                         </div>
 
                                         <div class="element_validate">
                                             <i class="fa fa-plus" aria-hidden="true">
-                                                <span class="ajouter_text"> Ajouter</span>
+                                                <span class="ajouter_text" id="click_jeu" > Ajouter</span>
                                             </i>
                                         </div>
                                     </div>
@@ -138,41 +138,13 @@
                         <img src='./assets/img/arrow_left.png'>
                     </div>
                     <div class='film_list_container'>
+                        <template>
                         <div class='film_added_element draggable'>
                             <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Un titre hyper long pour tester le côté responsiv</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
+                            <div class='film_element_titre'>Titre du film</div>
+                            <div class='film_element_data'>30:15 - Description du film</div>
                         </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Le retour du slip</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Ton père en slip</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>L'attaque des slips mutants</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Les fondements du bout du slip</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Science et philosophie</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>La scène du mec en slip</div>
-                            <div class='film_element_data'>ici on pourra trouver la durée et tous les autres attributs nécessaires</div>
-                        </div>
+                        </template>
                     </div>
                     <div class='arrow_button_list_added arrow_button_right'>
                         <img src='./assets/img/arrow_right.png'>

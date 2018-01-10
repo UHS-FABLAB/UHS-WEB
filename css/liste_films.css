@@ -36,7 +36,7 @@
     position: relative;
     display: block;
     width: 85%;
-    height: 88%;
+    height: 208px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -74,12 +74,15 @@
     display: block;
     position: relative;
     text-align: center;
-    font-size: 1.5vh;
+    font-size: 2vh;
     width: 100%;
     word-wrap: break-word;
     overflow: hidden;
+    font-family: Calibri;
 }
 
 .film_element_data{
-    display: none;
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: Calibri;
 }

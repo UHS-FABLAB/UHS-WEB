@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     //gère les onglets Ajout/modif
     $('.onglet').click(function(){
         $('.onglet').removeClass('onglet_actif');
@@ -27,6 +28,33 @@ $(document).ready(function () {
             //afficher contenu jeuvideo
             $('.film_add_video').removeClass('film_add_elem_active');
             $('.film_add_jeuvideo').addClass('film_add_elem_active');
+        }
+    });
+
+    //Ajout media au click
+    $("#testclick").click(function addMedia(){
+        var titre = $("#titre_film").val();
+        var description = $("#description_film").val();
+        if( titre === ""){
+            $('.error_film').html("Erreur, vous devez entrer le nom du film !");
+        }
+        else{
+            $('.error_film').html("");
+            var newMedia = "<div class='film_added_element draggable'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div><div class='film_element_titre'>" + titre + "</div><div class='film_element_data'>30:15 - " + description + "</div></div>";
+            $(".film_list_container").append(newMedia);
+        }
+    });
+
+    $("#click_jeu").click(function addGame(){
+        var titre = $("#titre_jeu").val();
+        var description = $("#description_jeu").val();
+        if( titre === ""){
+            $('.error_jeu').html("Erreur, vous devez entrer le nom du jeu !");
+        }
+        else{
+            $('.error_jeu').html("");
+            var newMedia = "<div class='film_added_element draggable'><div class='film_element_img'><img class='film_element_img_image' src='./assets/img/manette.jpg'></div><div class='film_element_titre'>" + titre + "</div><div class='film_element_data'>" + description + "</div></div>";
+            $(".film_list_container").append(newMedia);
         }
     });
 });
