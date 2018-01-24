@@ -27,6 +27,7 @@ $(document).ready(function () {
            console.log(newContainer.length);
            deletePopup();
            countMovies++;
+
             //gère les onglets Ajout/modif
             $('.onglet').click(function(){
                 $('.onglet').removeClass('onglet_actif');
@@ -135,7 +136,5 @@ $(document).ready(function () {
     }
 
     //gère les onglets des differents film
-    
-});
 
-//spéacial branche dev
+});
