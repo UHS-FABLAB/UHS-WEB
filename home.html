@@ -27,10 +27,23 @@
             </div>
             <div class="add_film"><img class="add_film" src='./assets/img/add_icon.png'></div>
         </div>
+    </div>
+
+    <template id="new_film">
+        <div class="onglet_ajout--film">
+            <i class="fa fa-times fa-times-close" aria-hidden="true"></i>
+            <h3>Création d'un nouveau film</h3>
+            <div class="onglet_ajout_film--titre">
+                <p>Titre :</p>
+                <input type="text" class="onglet_ajout_film--input-title" value="" placeholder="Titre du film" />
+            </div>
+            <i class="fa fa-check fa-check-v" aria-hidden="true"><span class="valider_text_film">Valider</span></i>
+        </div>
+    </template>
+    <template id="template_container">
         <div class='film_details_container'>
             <div class='film_details'>
                 <div class='film_modif_container'>
-
                     <div class='film_details_container_left'>
                         <div class='film_add_elements'>
                             <div class='film_modif_ajout_onglets'>
@@ -143,11 +156,11 @@
                     </div>
                     <div class='film_list_container'>
                         <template>
-                        <div class='film_added_element draggable'>
-                            <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
-                            <div class='film_element_titre'>Titre du film</div>
-                            <div class='film_element_data'>Description du film</div>
-                        </div>
+                            <div class='film_added_element draggable'>
+                                <div class='film_element_img'><img class='film_element_img_image' src='./assets/img/exemple_video.png'></div>
+                                <div class='film_element_titre'>Titre du film</div>
+                                <div class='film_element_data'>Description du film</div>
+                            </div>
                         </template>
                     </div>
                     <div class='arrow_button_list_added arrow_button_right'>
@@ -155,18 +168,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <template id="new_film">
-        <div class="onglet_ajout--film">
-            <i class="fa fa-times fa-times-close" aria-hidden="true"></i>
-            <h3>Création d'un nouveau film</h3>
-            <div class="onglet_ajout_film--titre">
-                <p>Titre :</p>
-                <input type="text" class="onglet_ajout_film--input-title" value="" placeholder="Titre du film" />
-            </div>
-            <i class="fa fa-check fa-check-v" aria-hidden="true"><span class="valider_text_film">Valider</span></i>
         </div>
     </template>
     <script src="js/jquery-min.js"></script>

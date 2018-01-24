@@ -1,4 +1,10 @@
 
+.container_film_actif{
+    position: relative;
+    height: 90%;
+}
+
+
 .film_list_added_elements{
 	display: flex;
 	position: relative;
@@ -19,7 +25,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 100%;
     width: 7.5%;
 }
 

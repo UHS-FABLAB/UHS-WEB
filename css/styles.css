@@ -316,7 +316,7 @@ html,body{
 
 .film_details_container{
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	background-color: white;
 	margin-top: -4px;/*permet de coller le conteneur aux onglets de films*/
 }
