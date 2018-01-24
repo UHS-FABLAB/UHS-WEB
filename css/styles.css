@@ -273,7 +273,7 @@ html,body{
 	text-overflow: ellipsis;
 	overflow-y: hidden;
 	vertical-align: top;
-	border-left: solid 1px white;
+	border-right: solid 1px white;
 }
 
 .film:hover{
@@ -298,7 +298,6 @@ html,body{
 	background-color: #f28e2b;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	border-left: solid 1px white;
 }
 
 .add_film:hover{
@@ -409,8 +408,8 @@ html,body{
 
 .film_launch img{
 	position: relative;
+    height: 30%;
 	width: auto;
-	height: 40%;
 	margin-top: auto;
     margin-bottom: auto;
 	}

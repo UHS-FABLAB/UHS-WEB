@@ -36,7 +36,7 @@
 }
 
 .fa-plus,
-.fa-check {
+.fa-check-elem {
     text-transform: uppercase;
     padding-left: 40px;
     padding-top: 10px;
@@ -170,4 +170,55 @@
 
 .onglet_modif{
     flex:1;
+}
+
+.onglet_ajout--film{
+    position: absolute;
+    z-index: 2;
+    background-color: #f28e2b;
+    left: 500px;
+    top : 200px;
+    border-radius: 10px;
+    font-family: Roboto;
+    text-align: center;
+    padding: 15px;
+}
+
+.onglet_ajout_film--titre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.onglet_ajout_film--titre input{
+    height: 30px;
+    margin-top: 10px;
+}
+
+.valider_text_film{
+    font-family: Roboto;
+}
+
+.fa-check-v {
+    padding-top: 5px;
+    font-size: 27px;
+}
+
+.fa-check-v:hover{
+    color: #62CEE2;
+    cursor: pointer;
+}
+
+.fa-times-close{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    padding: 3px 5px 3px 6px;
+    border-radius: 50px;
+}
+
+.fa-times-close:hover{
+    color: red;
+    cursor: pointer;
 }

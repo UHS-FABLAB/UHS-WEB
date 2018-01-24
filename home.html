@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles_media.css">
     <link rel="stylesheet" href="css/liste_films.css">
+    <meta charset="utf-8" />
 </head>
 
 <body>
@@ -17,11 +18,14 @@
             </div>
         </div>
     </div>
+    <div class="film_add--onglet">
+
+    </div>
     <div class='application'>
         <div class='liste_films'>
-            <div class='film selection'>Le destin de Marc</div>
-            <div class='film'>Le destin de Julie</div>
-            <div class="add_film"><img src='./assets/img/add_icon.png'></div>
+            <div class="liste_films--title">
+            </div>
+            <div class="add_film"><img class="add_film" src='./assets/img/add_icon.png'></div>
         </div>
         <div class='film_details_container'>
             <div class='film_details'>
@@ -118,7 +122,7 @@
                                 </div>
 
                                 <div class="element_validate">
-                                    <i class="fa fa-check" aria-hidden="true">
+                                    <i class="fa fa-check fa-check-elem" aria-hidden="true">
                                         <span class="valider_text">Valider</span>
                                     </i>
                                 </div>
@@ -152,8 +156,19 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+    <template id="new_film">
+        <div class="onglet_ajout--film">
+            <i class="fa fa-times fa-times-close" aria-hidden="true"></i>
+            <h3>Création d'un nouveau film</h3>
+            <div class="onglet_ajout_film--titre">
+                <p>Titre :</p>
+                <input type="text" class="onglet_ajout_film--input-title" value="" placeholder="Titre du film" />
+            </div>
+            <i class="fa fa-check fa-check-v" aria-hidden="true"><span class="valider_text_film">Valider</span></i>
+        </div>
+    </template>
     <script src="js/jquery-min.js"></script>
     <script src="js/monCode.js"></script>
     <script src="js/js_media.js"></script>

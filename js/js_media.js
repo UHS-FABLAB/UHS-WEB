@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var count = 0;
-    var count2 = 0;
     var id;
     var idGame;
 
@@ -18,6 +17,7 @@ $(document).ready(function () {
             $('.contenu_onglet_add').removeClass('contenu_onglet_actif');
         }
     });
+
     //gère les onglets video/jeuvideo
     $('.film_add_video_onglet, .film_add_jeuvideo_onglet').click(function(){
         $('.film_add_video_onglet, .film_add_jeuvideo_onglet').removeClass('film_add_onglet_actif');
@@ -97,6 +97,33 @@ $(document).ready(function () {
             });
         }
     });
+
+    //Ajout de film (onglets film)
+    $('.add_film').click(function (){
+        var newFilm = document.querySelector('#new_film');
+        var addFilm = document.querySelector('.film_add--onglet');
+        console.log(addFilm);
+        addFilm.innerHTML = newFilm.innerHTML;
+        $('.fa-check-v').click(function (){
+           var elemListFilm = document.querySelector('.liste_films--title');
+           var elemTitle = document.querySelector('.onglet_ajout_film--input-title').value;
+           console.log(elemTitle);
+           var divNewFilm = document.createElement('div');
+           divNewFilm.className = 'film';
+           divNewFilm.innerHTML = elemTitle;
+           elemListFilm.appendChild(divNewFilm);
+            deletePopup()
+        });
+        $('.fa-times-close').click(function () {
+           deletePopup();
+        });
+    });
+
+    function deletePopup() {
+       var selectPopup = document.querySelector('.film_add--onglet');
+       var popup = document.querySelector('.onglet_ajout--film');
+       selectPopup.removeChild(popup);
+    }
 });
 
 //spéacial branche dev
