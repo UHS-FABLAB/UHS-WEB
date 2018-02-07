@@ -176,36 +176,111 @@
     position: absolute;
     z-index: 2;
     background-color: #f28e2b;
-    left: 750px;
-    top : 250px;
+    left: calc(30% - 7.5px);/*on retire la moitié du padding*/
+    top : 18%;
+    min-width: 40%;
+    width: auto;
     border-radius: 10px;
     font-family: Roboto;
     text-align: center;
     padding: 15px;
 }
 
-.onglet_ajout_film--titre{
+.onglet_ajout_film{
+	position: relative;
     display: flex;
-    justify-content: space-between;
+    background-color: #cfd759;
+   	padding:15%;
+   	margin-bottom: 5%;
 }
 
-.onglet_ajout_film--titre input{
-    height: 30px;
-    margin-top: 10px;
+.onglet_ajout_film input{
+	position: relative;
+	height: 35px;
+	font-size: 22px;
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 2px white;
+	color: white;
+}
+
+.onglet_ajout_film input:focus{
+	outline: none;
+}
+
+.onglet_ajout_film input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}
+
+.onglet_ajout_film input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.onglet_ajout_film input::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.onglet_ajout_film_titre{
+	color: white;
+	position: relative;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+.onglet_ajout_img{
+	position: relative;
+	margin-right: 7%;
+}
+
+.onglet_ajout_img img{
+	height: 135px;
+	width: auto;
+}
+
+.onglet_ajout_label{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.onglet_ajout_label span{
+	position: relative;
+	float: left;
+	color: white;
+}
+
+.onglet_ajout_label span:nth-child(1){
+	margin-right: 15%;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.onglet_ajout_label span:nth-child(2){
 }
 
 .valider_text_film{
     font-family: Roboto;
+    margin-left: 15px;
 }
 
 .fa-check-v {
-    padding-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #cfd759;
+    color: white;
+    border-radius: 15px;
     font-size: 27px;
 }
 
 .fa-check-v:hover{
-    color: #62CEE2;
     cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:7px;
+    padding-right:7px;
+    border: solid 3px white;
 }
 
 .fa-times-close{

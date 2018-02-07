@@ -32,10 +32,13 @@
     <template id="new_film">
         <div class="onglet_ajout--film">
             <i class="fa fa-times fa-times-close" aria-hidden="true"></i>
-            <h3>Création d'un nouveau film</h3>
-            <div class="onglet_ajout_film--titre">
-                <p>Titre :</p>
-                <input type="text" class="onglet_ajout_film--input-title" value="" placeholder="Titre du film" />
+            <h3 class='onglet_ajout_film_titre'>Création d'un nouveau film</h3>
+            <div class="onglet_ajout_film">
+                <span class='onglet_ajout_img'><img src='./assets/img/app_photo.png'></span>
+                <span class='onglet_ajout_label'>
+                    <span>Titre</span>
+                    <span><input type="text" class="onglet_ajout_film--input-title" value="" placeholder="Titre du film" /></span>
+                </span>
             </div>
             <i class="fa fa-check fa-check-v" aria-hidden="true"><span class="valider_text_film">Valider</span></i>
         </div>
