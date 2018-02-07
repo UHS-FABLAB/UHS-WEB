@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var count = 0;
-    var countMovies = 0;
+    var countMovies = 1;
     var id;
     var idGame;
 
@@ -14,22 +14,37 @@ $(document).ready(function () {
            var elemListFilm = document.querySelector('.liste_films--title');
            var elemTitle = document.querySelector('.onglet_ajout_film--input-title').value;
            var divNewFilm = document.createElement('div');
-           divNewFilm.className = 'film film_nb_' + countMovies + '';
+           divNewFilm.className = 'film';
+           divNewFilm.id = 'film_nb_' +countMovies;
            divNewFilm.innerHTML = elemTitle;
            elemListFilm.appendChild(divNewFilm);
            var newContainer = document.createElement('div');
            var templateContaineur = document.querySelector('#template_container');
            var containerbla = document.querySelector('.application');
            containerbla.appendChild(newContainer);
-           newContainer.className = 'container_film' + countMovies + ' container_film_actif';
+           newContainer.className = 'container_film_nb_' + countMovies + ' container_film_actif';
            newContainer.innerHTML = templateContaineur.innerHTML;
-           console.log(templateContaineur.innerHTML);
-           console.log(newContainer.length);
            deletePopup();
+           var countMoviesLessOne;
+           countMoviesLessOne = countMovies - 1;
            countMovies++;
+           var lastMovie = $('.container_film_nb_'+ countMoviesLessOne);
+           lastMovie[0].style.display = "none";
 
-            //gère les onglets Ajout/modif
-            $('.onglet').click(function(){
+           //Gere les onglets des différents films
+           $('.film').click(function () {
+               var className = this.id;
+               for(var i=1; i<countMovies; i++) {
+                   var listFilm = $('.container_film_nb_' + i);
+                   listFilm[0].style.display = "none";
+               }
+               var classChange = "container_" + className;
+               var classChangeFocus = $('.' + classChange);
+               classChangeFocus[0].style.display = "flex";
+           });
+
+           //gère les onglets Ajout/modif
+           $('.onglet').click(function ongletAdd(){
                 $('.onglet').removeClass('onglet_actif');
                 $(this).addClass('onglet_actif');
                 if($(this).hasClass('onglet_add')){
@@ -43,8 +58,8 @@ $(document).ready(function () {
                 }
             });
 
-            //gère les onglets video/jeuvideo
-            $('.film_add_video_onglet, .film_add_jeuvideo_onglet').click(function(){
+           //gère les onglets video/jeuvideo
+           $('.film_add_video_onglet, .film_add_jeuvideo_onglet').click(function ongletMedia(){
                 $('.film_add_video_onglet, .film_add_jeuvideo_onglet').removeClass('film_add_onglet_actif');
                 if(!$(this).hasClass('film_add_onglet_actif')){
                     $(this).addClass('film_add_onglet_actif');
@@ -60,8 +75,8 @@ $(document).ready(function () {
                 }
             });
 
-            //Ajout media au click
-            $("#testclick").click(function addMedia(){
+           //Ajout media au click
+           $("#testclick").click(function addMedia(){
                 var titre = $("#titre_film").val();
                 var description = $("#description_film").val();
                 var title;
@@ -92,7 +107,8 @@ $(document).ready(function () {
                 }
             });
 
-            $("#click_jeu").click(function addGame(){
+           //Ajout jeu au click
+           $("#click_jeu").click(function addGame(){
                 var titre = $("#titre_jeu").val();
                 var description = $("#description_jeu").val();
                 if( titre === ""){
