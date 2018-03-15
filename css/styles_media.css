@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.ajouter_text, .valider_text {
+.add_media_button, .edit_media_button {
     font-family: "Roboto";
     font-weight: bold;
 }
@@ -91,7 +91,10 @@
 .onglet{
     display: flex;
     align-items: center;
-    flex: 1;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    width: 40%;
 }
 
 .onglet > i, .onglet > p{
@@ -108,7 +111,7 @@
 
 .onglet_actif{
     color: red;
-    flex: 2!important;
+    width: 60%!important;
 }
 
 .contenu_onglet{
@@ -121,20 +124,16 @@
     display: flex;
 }
 
-.film_modif_ajout_onglets_alter{
-    flex-direction: row-reverse;
-}
-
 .contenu_add_elem{
     display: block;
 }
 
-.film_add_video,.film_add_jeuvideo{
+.film_add_video_et_jeu{
     display: flex;
     flex-direction: column;
 }
 
-.film_add_video, .film_add_jeuvideo{
+.film_add_video_et_jeu{
     position: relative;
     display: none;
     width: 100%;
@@ -156,22 +155,6 @@
 .ajout_video{
     cursor:pointer;
 }
-
-.onglet{
-    text-transform: uppercase;
-    font-family: Roboto;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.onglet_add{
-    flex:2;
-}
-
-.onglet_modif{
-    flex:1;
-}
-
 .popup_ajout--film{
     position: absolute;
     z-index: 2;
@@ -190,7 +173,8 @@
 	position: relative;
     display: flex;
     background-color: #cfd759;
-   	padding:15%;
+   	padding:30px;
+   	width: calc(100% - 60px);
    	margin-bottom: 5%;
 }
 
@@ -200,6 +184,7 @@
 	font-size: 22px;
 	background-color: transparent;
 	border: none;
+	width: 100%;
 	border-bottom: solid 2px white;
 	color: white;
 }
@@ -245,7 +230,6 @@
 
 .popup_ajout_label span{
 	position: relative;
-	float: left;
 	color: white;
 }
 
@@ -256,6 +240,7 @@
 }
 
 .popup_ajout_label span:nth-child(2){
+	min-width: 60%;
 }
 
 .valider_text_film{
@@ -272,15 +257,18 @@
     color: white;
     border-radius: 15px;
     font-size: 27px;
+    border: solid 3px transparent;
+    -webkit-transition: all 0.4s ease-out;
+  	-moz-transition: all 0.4s ease-out;
+  	-o-transition: all 0.4s ease-out;
+  	transition: all 0.4s ease-out;
 }
 
 .fa-check-v:hover{
     cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left:7px;
-    padding-right:7px;
-    border: solid 3px white;
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+    border: solid 3px white!important;
 }
 
 .fa-times-close{

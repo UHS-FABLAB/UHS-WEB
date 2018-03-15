@@ -251,7 +251,7 @@ html,body{
 .liste_films{
 	position: relative;
 	display: inline-block;
-	height: 10%;
+	height: 60px;
 	width: 100%;
 }
 
@@ -261,12 +261,11 @@ html,body{
 	float: left;
 	cursor: pointer;
 	width: auto;
-	min-width: 5%;
-	max-width: 10%;
+	max-width: 20%;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 21px;
-	height: 40px;
+	height: 60px;
+	line-height: 60px;
 	text-transform: uppercase;
 	font-family: Calibri;
 	background-color: #f28e2b;
@@ -274,8 +273,18 @@ html,body{
 	overflow-y: hidden;
 	vertical-align: top;
 	border-right: solid 1px white;
+	-webkit-transition: all 0.4s ease-out;
+  	-moz-transition: all 0.4s ease-out;
+  	-o-transition: all 0.4s ease-out;
+  	transition: all 0.4s ease-out;
 }
-
+.onglet_film_actif{
+	height: 50px;
+	color: white!important;
+}
+.liste_films--title{
+	
+}
 .film:hover{
 	opacity: 0.8;
 }
@@ -360,7 +369,6 @@ html,body{
 
 .film_details_container_left{
 	display: flex;
-	flex: 1;
 	height: 80%;
 	margin-right: 2%;
 	margin-top: 3%;
@@ -381,7 +389,7 @@ html,body{
 
 .film_details_container_right{
 	display: flex;
-	flex: 3;
+	flex-grow: 2;
 	height: 80%;
 	margin-left: 2%;
 	margin-top: 3%;
@@ -390,8 +398,9 @@ html,body{
 .film_connexion_structure{
 	position: relative;
 	display: flex;
-	flex: 3;
 	background-color: #cecece;
+	flex-grow: 2;
+	min-width: 400px;
 	margin-right: 3%;
 }
 
@@ -400,6 +409,7 @@ html,body{
 	display: flex;
 	margin-left: 3%;
 	cursor: pointer;
+	max-width: 140px;
 }
 
 .film_launch:hover{

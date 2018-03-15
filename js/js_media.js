@@ -30,8 +30,15 @@ $(document).ready(function () {
         var containerAppli = $('.application');
         $(containerAppli).append(newFilmContainer);
         $(newFilmContainer).addClass('container_film_nb_' + (countMovies-1));
+        $(newFilmContainer).addClass('container_film_actif')
         $(newFilmContainer).html($(templateContainer).html());
         focusOnFilm(newFilmContainer);
+        setOngletFilmActif($('.liste_films > .liste_films--title > div:last-child'))
+    }
+
+    function setOngletFilmActif(onglet){
+        $('.onglet_film_actif').removeClass('onglet_film_actif');
+        $(onglet).addClass('onglet_film_actif');
     }
 
     function focusOnFilm(containerFilmFuturActif) {
@@ -53,22 +60,45 @@ $(document).ready(function () {
     }
 
     function listenOngletsAjoutEtModif(className){
-        $('.container_' + className + ' .onglet').click(function () {
-            console.log(className);
-            $('.container_' + className + ' .onglet').removeClass('onglet_actif');
+        $('.' + className + ' .onglet').click(function () {
+            $('.' + className + ' .onglet').removeClass('onglet_actif');
             $(this).addClass('onglet_actif');
-            if ($(this).hasClass('onglet_add')) {
-                $('.container_' + className + ' .contenu_onglet_add').addClass('contenu_onglet_actif');
-                $('.container_' + className + ' .contenu_onglet_modif').removeClass('contenu_onglet_actif');
-                $('.container_' + className + ' .film_modif_ajout_onglets').removeClass('film_modif_ajout_onglets_alter');
+            if ($(this).hasClass('onglet_add')){
+                $('.' + className + ' .contenu_onglet_add').addClass('contenu_onglet_actif');
+                //$('.' + className + ' .film_modif_ajout_onglets').removeClass('film_modif_ajout_onglets_alter');
             } else {
-                $('.container_' + className + ' .film_modif_ajout_onglets').addClass('film_modif_ajout_onglets_alter');
-                $('.container_' + className + ' .contenu_onglet_modif').addClass('contenu_onglet_actif');
-                $('.container_' + className + ' .contenu_onglet_add').removeClass('contenu_onglet_actif');
+                //$('.' + className + ' .film_modif_ajout_onglets').addClass('film_modif_ajout_onglets_alter');
+                $('.' + className + ' .contenu_onglet_modif').removeClass('contenu_onglet_actif');
             }
         });
     }
 
+    function checkFormulaireAjoutValidity(containerClassName){
+        var titreMedia = $('.' + containerClassName + ' .ajout_media_title').val();
+        var fileMedia = $('.' + containerClassName + ' .ajout_media_file').val();
+        var titreValid = false;
+        var fichierValid = false;
+        if(titreMedia!=""){
+            titreValid = true;
+        }
+        if(fileMedia!=""){
+            fichierValid = true;
+        }
+        //tester la présence du fichier
+        return (fichierValid && titreValid);
+    }
+
+    function addMediaToFilmList(containerClassName){
+        var titreMedia = $('.' + containerClassName + ' .ajout_media_title').val();
+        var fileMedia = $('.' + containerClassName + ' .ajout_media_file').val();
+        var descMedia = $('.' + containerClassName + ' .ajout_media_desc').val();
+        insertMediaInHTML(titreMedia, fileMedia, descMedia);
+    }
+
+    function insertMediaInHTML(){
+        return false;
+    }
+    /*
     function listenOngletsVideoEtJeuVideo(className){
         $('.container_' + className + ' .film_add_video_onglet, .film_add_jeuvideo_onglet').click(function ongletMedia() {
             $('.container_' + className + ' .film_add_video_onglet, .film_add_jeuvideo_onglet').removeClass('film_add_onglet_actif');
@@ -85,10 +115,14 @@ $(document).ready(function () {
                 $('.container_' + className + ' .film_add_jeuvideo').addClass('film_add_elem_active');
             }
         });
-    }
+    }*/
 
-    function listenAjoutVideoButton(className){
-        $('.container_' + className + ' #testclick').click(function () {
+    function listenAjoutMediaButton(className){
+        $('.'+ className + ' .add_media_button').click(function () {
+            if(checkFormulaireAjoutValidity(className)){
+                addMediaToFilmList(className);
+            }
+            /*
             var titre = $('.container_' + className + " #titre_film").val();
             var description = $('.container_' + className + " #description_film").val();
             var title;
@@ -115,10 +149,10 @@ $(document).ready(function () {
                     $('.container_' + className + ' #element_film_' + id).html(title);
                     $('.container_' + className + ' #element_data_' + id).html(describ);
                 });
-            }
+            }*/
         });
     }
-
+    /*
     function listenAjoutJeuButton(className){
         $('.container_' + className + ' #click_jeu').click(function() {
             var titre = $('.container_' + className + ' #titre_jeu').val();
@@ -148,26 +182,24 @@ $(document).ready(function () {
                 });
             }
         });
-    }
+    }*/
 
     function listenNewOngletFilm(){
         //Gere les onglets des différents films
         $('#film_nb_' + (countMovies -1)).click(function () {
-
             var className = this.id;
             var newClassName = "container_" + className;
             var classChangeFocus = $('.' + newClassName);
             focusOnFilm(classChangeFocus);
+            setOngletFilmActif(this);
         });
-        var containerClassName = 'container_film_nb'+(countMovies-1);
+        var containerClassName = 'container_film_nb_'+(countMovies-1);
         //Gere les onglets ajout/modif
         listenOngletsAjoutEtModif(containerClassName);
         //gère les onglets video/jeuvideo
-        listenOngletsVideoEtJeuVideo(containerClassName);
-        //Ajout video au click
-        listenAjoutVideoButton(containerClassName);
-        //Ajout jeu au click
-        listenAjoutJeuButton(containerClassName);
+        //listenOngletsVideoEtJeuVideo(containerClassName);
+        //Ajout media au click
+        listenAjoutMediaButton(containerClassName);
     }
 
     function listenClosePopupButton() {
